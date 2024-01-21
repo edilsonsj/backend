@@ -1,0 +1,105 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum outro servico 33333",
+    "description": "Alguma descricao",
+    "price": 144300,
+    "image":  "https://i.kym-cdn.com/photos/images/newsfeed/002/313/384/872"
+}
+
+
+###
+
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/65ad0ebb880d54c7a89241de
+
+
+###
+DELETE http://localhost:3000/api/services/65ac69938dc0845d7c412d20
+
+
+###
+
+PUT http://localhost:3000/api/services/65ac69948dc0845d7c412d22
+Content-Type: application/json
+
+{
+    "name": "TESTANDO",
+    "description": "Alguma descricao",
+    "price": 2,
+    "image":  "https://i.kym-cdn.com/photos/images/newsfeed/002/313/384/872"
+}
+
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "cacacacacacac",
+    "author": "cabbbbbbbbb",
+    "description": "c ac ac ac ac aca",
+    "budget": 1411,
+    "image":  "https://i.kym-cdn.com/photos/images/newsfeed/002/313/384/872",
+    "services": [
+    {
+        "name": "Algum outro servico 33333",
+        "description": "Alguma descricao",
+        "price": 30,
+        "image":  "https://i.kym-cdn.com/photos/images/newsfeed/002/313/384/872"
+    },
+    {
+        "name": "Algum outro servico 33333",
+        "description": "Alguma descricao",
+        "price": 1000,
+        "image":  "https://i.kym-cdn.com/photos/images/newsfeed/002/313/384/872"
+    }]
+
+}
+
+
+###
+
+GET http://localhost:3000/api/parties
+
+
+###
+
+GET http://localhost:3000/api/parties/65ad5cd7c202ad4e1905c7bb
+
+
+### 
+
+DELETE http://localhost:3000/api/parties/65ad5cd7c202ad4e1905c7bb
+
+
+
+### 
+
+PUT http://localhost:3000/api/parties/65ad5cd7c202ad4e1905c7bd
+Content-Type: application/json
+
+{
+    "title": "attt",
+    "author": "esculbar",
+    "description": "c ac ac ac ac aca",
+    "budget": 1411,
+    "image":  "https://i.kym-cdn.com/photos/images/newsfeed/002/313/384/872",
+    "services": [
+    {
+        "name": "Algum outro servico 33333",
+        "description": "Alguma descricao",
+        "price": 30,
+        "image":  "https://i.kym-cdn.com/photos/images/newsfeed/002/313/384/872"
+    },
+    {
+        "name": "Aaaaaaaaaaaaaaaaaaaaaaa33",
+        "description": "Alguma descricao",
+        "price": 1000,
+        "image":  "https://i.kym-cdn.com/photos/images/newsfeed/002/313/384/872"
+    }]
+
+}
